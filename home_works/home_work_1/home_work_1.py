@@ -24,15 +24,16 @@
 В качестве ответа предоставить ссылку на GitHub-репозиторий
 """
 
+from urllib import parse
+from http.cookies import SimpleCookie
+
 
 def parse_parameters(url):
-    from urllib import parse
     res = dict(parse.parse_qsl(parse.urlsplit(url).query))
     return res
 
 
 def parse_cookies(raw_data):
-    from http.cookies import SimpleCookie
     cookie = SimpleCookie()
     cookie.load(raw_data)
     cookies = {}
