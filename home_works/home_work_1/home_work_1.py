@@ -39,3 +39,17 @@ def parse_cookies(raw_data):
     for key, data_cookie in cookie.items():
         cookies[key] = data_cookie.value
     return cookies
+
+
+if __name__ == '__main__':
+    # Tests for function "parse_parameters"
+    assert parse_parameters('http://example.com/?') == {}
+    assert parse_parameters('https://example.com/path/to/page?name=ferret&color=purple') == {'name': 'ferret', 'color': 'purple'}
+    assert parse_parameters('https://example.com/page?name=Alex&age=21') == {'name': 'Alex', 'age': '21'}
+    assert parse_parameters('http://example.com/page/?name=Alexandr&age=22') == {'name': 'Alexandr', 'age': '22'}
+    assert parse_parameters('https://test_1.com/page?fruit=apple&color=red&price=14.00') == {'fruit': 'apple', 'color': 'red', 'price': '14.00'}
+    assert parse_parameters('http://e-catalog.ua/page?name=HP&model=Pavillion_dv5') == {'name': 'HP', 'model': 'Pavillion_dv5'}
+    assert parse_parameters('https://exam.com/page?name=Tests&page=21') == {'name': 'Tests', 'page': '21'}
+    assert parse_parameters('http://googlemap.com/page/?country=Ukraine&city=Odessa') == {'country': 'Ukraine', 'city': 'Odessa'}
+    assert parse_parameters('https://test_2.com/page?par=app') == {'par': 'app'}
+    assert parse_parameters('http://e-catalog.ua/page?category=PC&model=DELL&color=black') == {'category': 'PC', 'model': 'DELL', 'color': 'black'}
