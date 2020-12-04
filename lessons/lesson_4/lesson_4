@@ -1,0 +1,21 @@
+Лекция № 4 - PEP 8 - руководство по написанию кода на Python
+
+Удаление коммитов из ветки:
+1. Получаем хэш-код коммита, к которому хотим вернуться.
+2. Заходим в папку репозитория и пишем в консоль:
+
+    $ git reset --hard a3775a5485af0af20375cedf46112db5f813322a
+    $ git push --force
+
+pip3 install flake8 - установка Flake8 из пакетного менеджера Python
+pip3 install pep8 - установка PEP8 из пакетного менеджера Python
+sudo apt install flake8 - установка Flake8 из пакетного менеджера Ubuntu
+sudo apt install Pylint - установка Pylint из пакетного менеджера Ubuntu
+
+flake8 name_file.py - запуск на проверку PEP8 файла name_file.py
+pylink name_file.py - запуск на проверку PEP8 файла name_file.py
+
+Привязка Flake8 к GIT.
+(Не дает закоммитит файл в репозиторий пока не будет приведен файл к стандартам PEP-8):
+    1. flake8 --install-hook git
+    2. git config --bool flake8.strict true
