@@ -23,3 +23,9 @@
     - Залить все комиты на удаленный репозиторий (фактически в ваш GitHub-аккаунт)
 В качестве ответа предоставить ссылку на GitHub-репозиторий
 """
+
+
+def parse_parameters(url):
+    from urllib import parse
+    res = dict(parse.parse_qsl(parse.urlsplit(url).query))
+    return res
