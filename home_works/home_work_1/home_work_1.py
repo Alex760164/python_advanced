@@ -36,10 +36,10 @@ def parse_parameters(url):
 def parse_cookies(raw_data):
     cookie = SimpleCookie()
     cookie.load(raw_data)
-    cookies = {}
+    dict_cookies = {}
     for key, data_cookie in cookie.items():
-        cookies[key] = data_cookie.value
-    return cookies
+        dict_cookies[key] = data_cookie.value
+    return dict_cookies
 
 
 if __name__ == '__main__':
