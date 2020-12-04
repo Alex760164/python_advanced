@@ -29,3 +29,13 @@ def parse_parameters(url):
     from urllib import parse
     res = dict(parse.parse_qsl(parse.urlsplit(url).query))
     return res
+
+
+def parse_cookies(raw_data):
+    from http.cookies import SimpleCookie
+    cookie = SimpleCookie()
+    cookie.load(raw_data)
+    cookies = {}
+    for key, data_cookie in cookie.items():
+        cookies[key] = data_cookie.value
+    return cookies
