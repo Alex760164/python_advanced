@@ -45,6 +45,8 @@ def parse_cookies(raw_data):
 if __name__ == '__main__':
     # Tests for function "parse_parameters"
     assert parse_parameters('http://example.com/?') == {}
+    assert parse_parameters('http://example.com/') == {}
+    assert parse_parameters('https://test_2.com/par=app') == {'par': 'app'}
     assert parse_parameters('https://example.com/path/to/page?name=ferret&color=purple') == {'name': 'ferret', 'color': 'purple'}
     assert parse_parameters('https://example.com/page?name=Alex&age=21') == {'name': 'Alex', 'age': '21'}
     assert parse_parameters('http://example.com/page/?name=Alexandr&age=22') == {'name': 'Alexandr', 'age': '22'}
