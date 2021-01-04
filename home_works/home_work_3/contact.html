@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="keywords" content="Связаться с Василием Пупкиным, контакты Васи Пупкина, написать Васе">
+        <meta name="description" content="Связаться с Василием Пупкиным">
+        <meta name="author" content="Alex_T">
+
+        <link rel="stylesheet" href="css/style.css">
+
+        <title>Обо&nbsp;мне&nbsp;любимом</title>
+    </head>
+    <body>
+        <header>
+            <section class="left-col-menu logo">
+                <a href="index.html" title="Достижения в ходьбе Василия Пупкина">&laquo;Достижения&nbsp;Василия&raquo;</a>
+            </section>
+            <menu class="right-col-menu">
+                <li>
+                   <a href='index.html' title="Перейти на главную страницу">Главная</a>
+                </li>
+                <li>
+                   <a href='about.html' title="Перейти на страницу о Васе">О&nbsp;Васе&nbsp;Пупкине</a>
+                </li>
+                <li>
+                   <a href='contact.html' class="not-active">Связаться&nbsp;с&nbsp;Василием</a>
+                </li>
+            </menu>
+        </header>
+        <main>
+            <section id="left_column"></section>
+            <section id="right_column"></section>
+            <section id="center">
+                <h1 class="name_chapter">Связаться&nbsp;с&nbsp;Василием&nbsp;Пупкиным</h1>
+                <form name="contact_form" action="" method="POST">
+                    <p>
+                        <label for="fio">Фамилия&nbsp;<em>*&nbsp;:</em></label>
+                        <br>
+                        <input type="text" id="fio" name="fio_text" minlength="3" maxlength="30" required>
+                    </p>
+                    <p>
+                        <label for="name">Имя&nbsp;<em>*&nbsp;:</em></label>
+                        <br>
+                        <input type="text" id="name" name="name_text" minlength="3" maxlength="30" required>
+                    </p>
+                    <p>
+                        <label for="email">E-mail&nbsp;<em>*&nbsp;:</em></label>
+                        <br>
+                        <input type="email" id="email" name="email_text" minlength="3" maxlength="30" required>
+                    </p>
+                    <p>
+                        <label for="subject">Тема&nbsp;сообщения&nbsp;<em>*&nbsp;:</em></label>
+                        <br>
+                        <select size="1" id="subject" name="subject_text" required>
+                            <option value="">Укажите&nbsp;тему...</option>
+                            <option value="Тема сообщения 1">Тема&nbsp;сообщения&nbsp;1</option>
+                            <option value="Тема сообщения 2">Тема&nbsp;сообщения&nbsp;2</option>
+                            <option value="Тема сообщения 3">Тема&nbsp;сообщения&nbsp;3</option>
+                            <option value="Тема сообщения 4">Тема&nbsp;сообщения&nbsp;4</option>
+                            <option value="Тема сообщения 5">Тема&nbsp;сообщения&nbsp;5</option>
+                            <option value="Тема сообщения 6">Тема&nbsp;сообщения&nbsp;6</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="message">Сообщение&nbsp;<em>*&nbsp;:</em></label>
+                        <br>
+                        <textarea rows="6" cols="50" name="message" id="message" maxlength="255" required></textarea>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="post_email" name="post_email_text">
+                        <label for="post_email">&nbsp;Получать&nbsp;ответ&nbsp;по&nbsp;E-mail<em></em></label>
+                    </p>
+                    <p>
+                        <input type="submit" value="Отправить сообщение">
+                        <input type="reset" value="Очистить форму">
+                    </p>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <div>Василий&nbsp;Пупкин&nbsp;2020-2021&nbsp;&copy;</div>
+        </footer>
+    </body>
+</html>

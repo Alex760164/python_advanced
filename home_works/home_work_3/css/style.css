@@ -1,0 +1,164 @@
+body {
+    font: 11pt Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+h1 {
+    margin: 0;
+    color: #fff;
+}
+
+/* Верхний блок */
+header {
+    background: #0080c0;
+    padding: 15px 10px 20px 10px;
+}
+
+/* Левая колонка */
+#left_column {
+    float: left;
+    width: 10%;
+    padding: 5px;
+    margin: 10px 10px 20px 5px;
+}
+
+/* Центральная колонка */
+#center {
+    margin: 10px 12% 80px 12%;
+    padding: 5px;
+}
+
+/* Правая колонка */
+#right_column {
+    float: right;
+    width: 10%;
+    padding: 5px;
+    margin: 10px 5px 20px 10px;
+}
+
+/* Нижний блок */
+footer {
+    position: fixed;
+    left: 0; bottom: 0;
+    width: 100%;
+    background: #333;
+    padding: 10px 0;
+    color: #fff;
+    clear: left;
+    text-align: center;
+}
+
+menu {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+.left-col-menu {
+    width: 40%;
+    margin-left: 15px;
+    float: left;
+}
+
+.right-col-menu {
+    width: 60%;
+    margin-left: 40%;
+    margin-top: 5px;
+    text-align: right;
+
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    color: blue;
+    text-shadow: #cad5e2 1px 1px 0,
+                 #cad5e2 -1px -1px 0,
+                 #cad5e2 -1px 1px 0,
+                 #cad5e2 1px -1px 0;
+}
+
+.logo a {
+    font-size: 22px;
+    margin: 0 0 10px 0;
+}
+
+li {
+    display: inline;
+    padding: 2px 15px 0 0;
+}
+
+.name_chapter {
+    color: black;
+    font-weight: 600;
+    margin-top: 1.2em;
+}
+
+table {
+    width: 100%;
+    border: 2px solid #5fabf1;
+    margin-top: 15px;
+    box-shadow: 0 0 10px rgb(28 140 220);
+}
+
+th {
+    background: #0080c0;
+    color: #fff;
+    font-weight: 400;
+}
+
+.col_1 {
+    width: 15%;
+}
+
+.col_2 {
+    width: 25%;
+}
+
+.col_3 {
+    width: 30%;
+}
+
+.row_light {
+    background: #76b5f0;
+}
+
+.row_dark {
+    background: #5fabf1;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+.not-active {
+    pointer-events: none;
+    cursor: default;
+    color: red;
+    text-shadow: #cad5e2 1px 1px 0,
+                 #cad5e2 -1px -1px 0,
+                 #cad5e2 -1px 1px 0,
+                 #cad5e2 1px -1px 0;
+}
+
+.avatar {
+    float: left;
+    width: 30%;
+    margin: 1.5em 0 1.5em 0;
+}
+
+.avatar img{
+    max-width: 100%;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.biography p{
+    font-size: 15px;
+}
